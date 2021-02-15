@@ -36,11 +36,11 @@
       <div class="component1">
         <div class="widthContainer">
           <p id="pageViews"><span id="pageViewValue"></span> Pageviews</p>
-        <p id="monthlyCost">
-          <span id="boldCost">
-            $<span id="monthlyPriceValue"></span>
-          </span> /month
-        </p>
+          <p id="monthlyCost">
+            <span id="boldCost">
+              $<span id="monthlyPriceValue"></span>
+            </span> /month
+          </p>
         </div>
         
       
@@ -49,8 +49,23 @@
           <input type="range" min="0" max="4" value="2" class="slider" id="myRange">
         </div>
 
-        <p>Monthly Billing</p>
-        <p>Yearly Billing 25% discount</p>
+        <div class="widthContainer toggleSwitch">
+          <p>
+            <!-- Monthly billing text -->
+            Monthly Billing
+
+            <!-- Switch -->
+            <label class="switch">
+              <input type="checkbox">
+              <span class="switchSlider round"></span>
+            </label>
+            
+            <!-- Yearly billing text -->
+            Yearly Billing
+            <span id="discount">25% discount</span>
+          </p>
+        </div>
+        
         <hr>
       </div>
   
