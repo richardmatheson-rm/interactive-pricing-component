@@ -5,11 +5,16 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #fafbff;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 15px;
+  color: #858fad;
 }
 
 body main {
@@ -28,6 +33,10 @@ body main header {
   background-position: center;
 }
 
+body main header h1 {
+  color: #293356;
+}
+
 body main .pricingComponent {
   width: 50%;
   height: 50%;
@@ -35,6 +44,7 @@ body main .pricingComponent {
   background-color: white;
   -webkit-box-shadow: 5px 5px 5px 4px #eaeefb;
           box-shadow: 5px 5px 5px 4px #eaeefb;
+  border-radius: 8px;
 }
 
 body main .pricingComponent .widthContainer {
@@ -56,6 +66,7 @@ body main .pricingComponent .component1 #pageViews {
 body main .pricingComponent .component1 #boldCost {
   font-weight: 800;
   font-size: 40px;
+  color: #293356;
 }
 
 body main .pricingComponent .component1 #monthlyCost {
@@ -99,6 +110,8 @@ body main .pricingComponent .component1 .slideContainer .slider::-webkit-slider-
   background-repeat: no-repeat;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px #a5f3eb;
+          box-shadow: 5px 5px 5px #a5f3eb;
 }
 
 body main .pricingComponent .component1 .slideContainer .slider::-moz-range-thumb {
@@ -220,5 +233,10 @@ button {
   text-decoration: none;
   font-size: 15px;
   border-radius: 40px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */
