@@ -49,6 +49,7 @@ body {
       height: 50%;
       margin: 0% auto;
       background-color: $white;
+      box-shadow: 5px 5px 5px 4px $light-grayish-blue;
 
       .widthContainer {
         width: 75%;
@@ -153,7 +154,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: $light-grayish-blue-2;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -171,11 +172,11 @@ body {
 }
 
 input:checked + .switchSlider {
-  background-color: #2196f3;
+  background-color: $dark-desaturated-blue;
 }
 
 input:focus + .switchSlider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px $dark-desaturated-blue;
 }
 
 input:checked + .switchSlider:before {
@@ -199,4 +200,38 @@ input:checked + .switchSlider:before {
   border-radius: 50px;
   font-size: 12px;
   padding: 4px;
+  margin-left: 10px;
+}
+
+.component2 {
+  width: 75%;
+  margin: auto;
+  height: 100px;
+  padding-top: 20px;
+}
+.perksList {
+  float: left;
+  ul {
+    list-style-image: url(/images/icon-check.svg);
+
+    li {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.trialComponent {
+  float: right;
+  margin-top: 15px;
+}
+
+button {
+  background-color: $dark-desaturated-blue;
+  border: none;
+  color: $pale-blue;
+  padding: 12px 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: $font-size-intro;
+  border-radius: 40px;
 }

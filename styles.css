@@ -33,6 +33,8 @@ body main .pricingComponent {
   height: 50%;
   margin: 0% auto;
   background-color: white;
+  -webkit-box-shadow: 5px 5px 5px 4px #eaeefb;
+          box-shadow: 5px 5px 5px 4px #eaeefb;
 }
 
 body main .pricingComponent .widthContainer {
@@ -136,7 +138,7 @@ body main .pricingComponent .component1 .toggleSwitch p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #cdd7ee;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -154,12 +156,12 @@ body main .pricingComponent .component1 .toggleSwitch p {
 }
 
 input:checked + .switchSlider {
-  background-color: #2196f3;
+  background-color: #293356;
 }
 
 input:focus + .switchSlider {
-  -webkit-box-shadow: 0 0 1px #2196f3;
-          box-shadow: 0 0 1px #2196f3;
+  -webkit-box-shadow: 0 0 1px #293356;
+          box-shadow: 0 0 1px #293356;
 }
 
 input:checked + .switchSlider:before {
@@ -182,5 +184,41 @@ input:checked + .switchSlider:before {
   border-radius: 50px;
   font-size: 12px;
   padding: 4px;
+  margin-left: 10px;
+}
+
+.component2 {
+  width: 75%;
+  margin: auto;
+  height: 100px;
+  padding-top: 20px;
+}
+
+.perksList {
+  float: left;
+}
+
+.perksList ul {
+  list-style-image: url(/images/icon-check.svg);
+}
+
+.perksList ul li {
+  margin-bottom: 6px;
+}
+
+.trialComponent {
+  float: right;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #293356;
+  border: none;
+  color: #bdccff;
+  padding: 12px 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 40px;
 }
 /*# sourceMappingURL=styles.css.map */
