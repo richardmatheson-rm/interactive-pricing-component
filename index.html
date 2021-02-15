@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/styles.css" type="text/css">
+  <!-- <link rel="stylesheet" href="/slider.css" type="text/css"> -->
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
@@ -19,7 +20,7 @@
 </head>
 <body>
 
-  <div class="body-component">
+  <main>
     <header>
       <h1>
         Simple, traffic-based pricing
@@ -29,17 +30,32 @@
       </p>
     </header>
     
-    <div class="pricing-component">
+    <div class="pricingComponent">
   
-      <div class="component-1">
-        Pageviews
-        $ /month
+      <!-- Upper half of pricing component -->
+      <div class="component1">
+        <div class="widthContainer">
+          <p id="pageViews"><span id="pageViewValue"></span> Pageviews</p>
+        <p id="monthlyCost">
+          <span id="boldCost">
+            $<span id="monthlyPriceValue"></span>
+          </span> /month
+        </p>
+        </div>
+        
       
-        Monthly Billing
-        Yearly Billing 25% discount
+        <!-- Slider -->
+        <div class="slideContainer"> 
+          <input type="range" min="0" max="4" value="2" class="slider" id="myRange">
+        </div>
+
+        <p>Monthly Billing</p>
+        <p>Yearly Billing 25% discount</p>
+        <hr>
       </div>
   
-      <div class="component-2">
+      <!-- Bottom half of pricing component -->
+      <div class="component2">
         Unlimited websites
         100% data ownership
         Email reports
@@ -47,11 +63,13 @@
         Start my trial
       </div>
     </div>
-  </div>
+  </main>
+    
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Richard Matheson</a>.
   </div>
 </body>
+<script src="main.js"></script>
 </html>
